@@ -37,13 +37,13 @@ else:
     print("You got -3 points\n")
     points -= 3
 
-question_four = input("Which game is better: CSGO, Valorant")
-if question_four == "CSGO":
-    print("A good choice")
+question_four = input("solve for y: 2 + 4y = 18\n")
+if question_four == "4":
+    print("A good answer")
     print("+1 point!\n")
     points += 1
 else:
-    print("This game is a copy...")
+    print("ok.")
     print("-2 points...\n")
     points -= 2
 
@@ -63,12 +63,12 @@ else:
 time.sleep(2.0)
 points = points
 print("This is the end of the quiz!")
-print("int(points):8 points have been acquired!")
+print(f"{points}/8 points have been acquired!\n")
 if points == 8:
     print("Good job you aced the easiest quiz ever!")
 elif points in range(6, 7):
     print("You did good, kinda..")
 elif points in range(4, 5):
-    print("Getting lower than an 8 yikes")
+    print("sad.")
 else:
-    print("yikes.")
+    print(".......")
