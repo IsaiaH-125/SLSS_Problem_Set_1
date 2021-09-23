@@ -3,8 +3,6 @@
 # Quiz has 5 questions the user will answer
 # It will keep track of score and give a final result
 
-
-
 import time
 
 print('An Idiots quiz!\n')
@@ -19,6 +17,7 @@ if question_one == 2:
 else:
     print("that was wrong.")
     print("You didn't gain any points")
+
 question_two = input('Where is Canada located\n' 'a) NA\n''b) France\n''c) Asia\n''d) America\n')
 if question_two.lower() == "a":
     print('Well done.')
@@ -58,13 +57,13 @@ else:
     print("....")
     time.sleep(1.0)
     print("really...")
-    print("-8 points not the right answer\n")
+    print("-8 points. Not the right answer.\n")
     points -= 8
 
 time.sleep(2.0)
 points = points
 print("This is the end of the quiz!")
-print("{points}:8 points have been acquired!")
+print("int(points):8 points have been acquired!")
 if points == 8:
     print("Good job you aced the easiest quiz ever!")
 elif points in range(6, 7):
