@@ -92,18 +92,32 @@
 
 questions = [
     ["What is the correct answer for 1+1?", "2"],
-    ["Where is Canada located", "North America" "NA"],
+    ["Where is Canada located", "north america", "na"],
     ["Solve for x: 3x - 18 = 6", "8"],
     ["solve for y: 2 + 4y = 18", "4"],
-    ["cereal then milk or milk then cereal", "Cereal then milk", "CTM", "ctm"]
+    ["cereal then milk or milk then cereal", "cereal then milk", "ctm"]
 ]
 
-score = 0
 
-for question in questions:
-    print(question[0])
-    reply = input()
-    if reply == questions[1:]:
-        points += 1
+questions = {q[0]: q[1:] for q in questions}
 
-print(f"{points}out of {len(questions)}")
+
+converted = {}
+for q in questions:
+    converted[q[0]] = q[1:]
+
+points = 0
+
+# for question in questions:
+#     print(question[0])
+#     reply = input()
+#     if reply == question[1]:
+#         points += 1
+
+# for question, answers in questions.items():
+#     if input(question + '\n').lower() in answers:
+#         points += 1
+
+# print(f"{points} out of {len(questions)}")
+
+
