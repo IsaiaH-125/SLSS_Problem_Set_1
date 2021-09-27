@@ -37,7 +37,7 @@ else:
     print("You got -3 points\n")
     points -= 3
 
-question_four = input("solve for y: 2 + 4y = 18\n")
+question_four = int(input("solve for y: 2 + 4y = 18\n"))
 if question_four == "4":
     print("A good answer")
     print("+1 point!\n")
@@ -47,7 +47,7 @@ else:
     print("-2 points...\n")
     points -= 2
 
-question_five = int(input(f"Solve for x: 3x - 18 = 6\n"))
+question_five = int(input("Solve for x: 3x - 18 = 6\n"))
 if question_five == 8:
     print("Good job!")
     print("+2 points!\n")
