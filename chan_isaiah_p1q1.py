@@ -27,18 +27,8 @@ else:
     print("really?? that’s just sad.")
     print("You missed out on the greatest reward, points.\n")
 
-question_three = input("cereal then milk or milk then cereal\n""A\n""or\n""B\n")
-if question_three.lower() == "a":
-    print("You picked the correct choice")
-    print("You got 3 extra points for the better answer!\n")
-    points += 3
-else:
-    print("Tsk.. Tsk..")
-    print("You got -3 points\n")
-    points -= 3
-
-question_four = int(input("solve for y: 2 + 4y = 18\n"))
-if question_four == "4":
+question_three = int(input("solve for y: 2 + 4y = 18\n"))
+if question_three == 4:
     print("A good answer")
     print("+1 point!\n")
     points += 1
@@ -46,6 +36,16 @@ else:
     print("ok.")
     print("-2 points...\n")
     points -= 2
+
+question_four = input("cereal then milk or milk then cereal\n""A\n""or\n""B\n")
+if question_four.lower() == "a":
+    print("You picked the correct choice")
+    print("You got 3 extra points for the better answer!\n")
+    points += 3
+else:
+    print("Tsk.. Tsk..")
+    print("You got -3 points\n")
+    points -= 3
 
 question_five = int(input("Solve for x: 3x - 18 = 6\n"))
 if question_five == 8:
