@@ -73,19 +73,7 @@ elif points in range(4, 5):
 else:
     print(".......")
 
-questions = [
-    ["What colour is the sky?", "blue"],
-    ["What colour is the ocean?", "blue"],
-    ["What colour is the water?", "blue"],
-]
 
-points = 0
-
-for question in questions:
-    print(question[0])
-    reply = input()
-    if reply == question[1:]:
-        points += 1
 #
 #
 # print(f"{points} out of {len(questions)}")
