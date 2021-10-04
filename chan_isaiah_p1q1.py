@@ -115,3 +115,23 @@ else:
 # print(f"{points} out of {len(questions)}")
 
 
+
+#Other stuff ----------------------------------------------------------------------
+#Create a list of questions
+
+# from rich import print
+#
+# questions = [
+#     ["What is the colour of the [bold italic red]sun[/bold italic red]?", "yellow"]
+# ]
+# #For each question, print out and ask the user to answer
+# for question in questions:
+#     #print the question
+#     print(question[0])
+# # get users answer
+#     user_answer = input().lower().strip(",..?!")
+#
+# if user_answer.lower() == "yellow":
+#     print("Good job")
+# else:
+#     print("Oh no")
