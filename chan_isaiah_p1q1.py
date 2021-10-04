@@ -54,7 +54,7 @@ if question_five == 8:
     points += 2
 else:
     time.sleep(1.0)
-    print("....")
+    print("uhh....")
     time.sleep(1.0)
     print("really...")
     print("-8 points. Not the right answer.\n")
@@ -71,49 +71,7 @@ elif points in range(6, 7):
 elif points in range(4, 5):
     print("sad.")
 else:
-    print(".......")
-
-
-#
-#
-# print(f"{points} out of {len(questions)}")
-
-#Shortened Quiz Versions
-
-#Version 1
-
-# questions = [
-#     ["What is the correct answer for 1+1?", "2"],
-#     ["Where is Canada located", "north america", "na"],
-#     ["Solve for x: 3x - 18 = 6", "8"],
-#     ["solve for y: 2 + 4y = 18", "4"],
-#     ["cereal then milk or milk then cereal", "cereal then milk", "ctm"]
-# ]
-#
-#
-# questions = {q[0]: q[1:] for q in questions}
-#
-#
-# converted = {}
-# for q in questions:
-#     converted[q[0]] = q[1:]
-#
-# points = 0
-
-#Version 2
-
-# for question in questions:
-#     print(question[0])
-#     reply = input()
-#     if reply == question[1]:
-#         points += 1
-
-# for question, answers in questions.items():
-#     if input(question + '\n').lower() in answers:
-#         points += 1
-
-# print(f"{points} out of {len(questions)}")
-
+    print(" :/ ")
 
 
 #Other stuff ----------------------------------------------------------------------
